@@ -1,0 +1,184 @@
+// Add additional styles here. For example, overwrite certain styles or add new components.
+// Tip: You can use bootstrap's powerful mixins here!
+
+
+//.alert-myalert {
+//  @include alert-variant(#60667d, #1d1d1d, #f4fdff);
+//}
+
+//@each $color, $value in $theme-colors {
+//  .alert-#{$color} {
+//    box-shadow: 3px 3px theme-color-level($color, -3);
+//  }
+//}
+
+
+// Changing buttons 
+/*
+
+.btn {
+    color: #fff;
+    border-width: 2px;
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.btn-primary {
+    &:hover {
+        background-color: transparent;
+        border-color: #ffffff;
+        color: #fff;
+    }
+    &--subs {
+        &:hover {
+            background-color: #f2b410;
+        }
+    }
+}
+
+.btn-outline-dark {
+    color: #2b2b2b;
+    &:hover {
+        background-color: #f2b410;
+        border-color: #f2b410;
+    }
+}
+*/
+
+// Changing forms 
+
+/*
+
+.form-control {
+    background: transparent;
+    color: #ffffff;
+    padding: 1.5rem 1.125rem;
+    &:focus {
+        background: transparent;
+        color: #ffffff;
+    }
+    &::placeholder {
+        color:#fff;
+    }
+    &.form-control--select {
+        padding: 0 1.125rem;
+        height: 3.125rem;
+    }
+    &--contact {
+        border-top: unset;
+        border-left: unset;
+        border-right: unset;
+        transition:  border .1s ease-in-out;
+        color:#2b2b2b !important;
+        &::placeholder {
+            color:#bbbbbb;
+            position: relative;
+            left: 0;
+        }
+        &:focus {
+            box-shadow: unset;
+        }
+        &:hover {
+            border-color: #2b2b2b;
+        }   
+    }
+    &--subs{
+        background-color: #eeeeee;
+        border: none;
+        color:#aaaaaa !important;
+        &::placeholder {
+            color: #aaaaaa;
+        }
+        &:focus {
+            background-color: #eeeeee;
+        }
+    }
+}
+
+// Changing Breadcrumbs 
+
+.breadcrumb {
+    background-color: transparent;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    justify-content: center;
+}
+
+.breadcrumb-item {
+    &.active {
+        color: #fff;
+    }
+    &.breadcrumb-item + .breadcrumb-item {
+        &::before {
+            color: #d6a016;
+        }
+    }
+}
+*/
+
+.container {
+    max-width: 970px;
+    &.main-nav,&.movies {
+     max-width: 1150px;
+    }
+    &.footer {
+        border-bottom: 1px solid #444444;
+        @media only screen and (min-width: 1024px) {
+            padding: 0;
+        }
+    }
+    
+}
+
+
+.breadcrumb {
+    background-color: #111111;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    .breadcrumb-item {
+        &:hover {
+            a {
+                text-decoration: underline;
+            }
+        }
+        &.active {
+            color: #fff;
+        }
+        +.breadcrumb-item {
+            &::before {
+                content: "\f054";
+                font-family: "Font Awesome\ 5 Free";  
+                font-weight: 900;
+                font-size: 1rem;
+                padding: 0;
+            }
+        }
+    }
+    
+}
+
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    &--book {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        padding: 1.8rem 3.6rem;
+        @media only screen and (max-width: 475px) {
+            width: 100%;
+            margin: 2rem 0 1rem 0;
+        }
+        
+    }
+}
+
+
+.table-dark {
+    background-color: #111111;
+
+}
