@@ -9,11 +9,6 @@ import { HomeComponent } from './layouts/home/home.component';
 
 const routes: Routes = [
   {
-    path: '**',
-    component: HomeComponent,
-  },
-
-  {
     path: 'movies/:title',
     component: MovieComponent,
   },
@@ -32,6 +27,10 @@ const routes: Routes = [
     path: 'movies/:title/schedule/checkout/thank-you',
     component: ThankYouComponent,
   },
+  {
+    path: '**',
+    component: HomeComponent,
+  }
 ];
 
 
