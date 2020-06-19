@@ -17,9 +17,9 @@ export class MoviesService {
       duration: '90 minutes',
       // tslint:disable-next-line: max-line-length
       synopsis: `Unhinged - Starring Russell Crowe, a psychological thriller that takes something we've all experienced- road rage - to an unpredictable and terrifying conclusion. Rachel (Caren Pistorius) is running late getting to work when she crosses paths with a stranger (Crowe) at a traffic light. Soon, Rachel finds herself and everyone she loves the target of a man who feels invisible and is looking to make one last mark upon the world by teaching her a series of deadly lessons. What follows is a dangerous game of cat and mouse that proves you never know who you're driving next to. Buy Unhinged movie tickets and get showtimes at Regal theatres, on the Regal mobile app or online. Discover movie trailers and view upcoming movies at www.regmovies.com. Stop by a Moviak theater near you today.`,
-      genre: '',
+      genre: 'Action',
       cast: `Russell Crowe, Gabriel Bateman, Caren Pistorius, Anne Leighton, Jimmi Simpson`,
-      Director: 'Derrick Borte',
+      director: 'Derrick Borte',
       production: '2020',
       restrictions: 'NR',
       seats: [
@@ -83,7 +83,7 @@ export class MoviesService {
       genre: 'Action, Drama',
       // tslint:disable-next-line: max-line-length
       cast: `Kenneth Branagh, Michael Caine, Robert Pattinson, Elizabeth Debicki, John David Washington, Aaron Taylor-Johnson, Clémence Poésy, Dimple Kapadia`,
-      Director: 'Christopher Nolan',
+      director: 'Christopher Nolan',
       production: '2020',
       restrictions: 'NR',
       seats: [
@@ -147,7 +147,7 @@ export class MoviesService {
       genre: 'Action',
       // tslint:disable-next-line: max-line-length
       cast: `Jet Li, Yifei Liu, Donnie Yen, Jason Scott Lee, Yoson An, Gong Li`,
-      Director: 'Niki Caro',
+      director: 'Niki Caro',
       production: '2020',
       restrictions: 'PG13',
       seats: [
@@ -211,7 +211,7 @@ export class MoviesService {
       genre: 'Comedy',
       // tslint:disable-next-line: max-line-length
       cast: `Tom Kenny, Clancy Brown, Rodger Bumpass, Bill Fagerbakke, Stephanie D'Abruzzo, Jill Talley`,
-      Director: 'Tim Hill',
+      director: 'Tim Hill',
       production: '2020',
       restrictions: 'NR',
       seats: [
@@ -275,7 +275,7 @@ export class MoviesService {
       genre: 'Action',
       // tslint:disable-next-line: max-line-length
       cast: `Rachel Weisz, Ray Winstone, Scarlett Johansson, Florence Pugh, David Harbour, O-T Fagbenle`,
-      Director: 'Cate Shortland',
+      director: 'Cate Shortland',
       production: '2020',
       restrictions: 'NR',
       seats: [
@@ -339,7 +339,7 @@ export class MoviesService {
       genre: 'Action',
       // tslint:disable-next-line: max-line-length
       cast: `Ryan Reynolds, Utkarsh Ambudkar, LilRel Howery, Taika Waititi, Joe Keery, Jodie Comer`,
-      Director: 'Shawn Levy',
+      director: 'Shawn Levy',
       production: '2020',
       restrictions: 'NR',
       seats: [
@@ -403,7 +403,7 @@ export class MoviesService {
       genre: 'Action, Drama',
       // tslint:disable-next-line: max-line-length
       cast: `Tom Cruise, Miles Teller, Jennifer Connelly, Jon Hamm, Val Kilmer`,
-      Director: 'Joseph Kosinski',
+      director: 'Joseph Kosinski',
       production: '2020',
       restrictions: 'NR',
       seats: [
@@ -467,7 +467,7 @@ export class MoviesService {
       genre: 'Action, Drama',
       // tslint:disable-next-line: max-line-length
       cast: `Chris Pine, Kristen Wiig, Robin Wright, Pedro Pascal, Gal Gadot, Connie Nielsen`,
-      Director: 'Patty Jenkins',
+      director: 'Patty Jenkins',
       production: '2020',
       restrictions: 'NR',
       seats: [
@@ -531,7 +531,7 @@ export class MoviesService {
       genre: 'Action, Drama',
       // tslint:disable-next-line: max-line-length
       cast: `Jack Huston, Kiersey Clemons, Gabourey Sidibe, Jena Malone, Janelle Monáe, Tongayi Chirisa, Marque Richardson II, Eric Lange, Rob Aramayo, Lily Cowles`,
-      Director: 'Gerard Bush, Christopher Renz',
+      director: 'Gerard Bush, Christopher Renz',
       production: '2020',
       restrictions: 'NR',
       seats: [
@@ -595,7 +595,7 @@ export class MoviesService {
       genre: 'Horror',
       // tslint:disable-next-line: max-line-length
       cast: `Emily Blunt, Cillian Murphy, Djimon Hounsou, Noah Jupe, Millicent Simmonds`,
-      Director: 'John Krasinski',
+      director: 'John Krasinski',
       production: '2020',
       restrictions: 'PG13',
       seats: [
@@ -659,7 +659,7 @@ export class MoviesService {
       genre: 'Action',
       // tslint:disable-next-line: max-line-length
       cast: `Ben Whishaw, Daniel Craig, Ralph Fiennes, Jeffrey Wright, Naomie Harris, Rami Malek, Rory Kinnear, Ana de Armas, Lashana Lynch, Billy Magnussen, Léa Seydoux, David Dencik, Dali Benssalah`,
-      Director: 'Cary Joji Fukunaga',
+      director: 'Cary Joji Fukunaga',
       production: '2020',
       restrictions: 'PG13',
       seats: [
@@ -723,7 +723,7 @@ export class MoviesService {
       genre: 'Action',
       // tslint:disable-next-line: max-line-length
       cast: `Ryan Reynolds, Emma Stone, Leslie Mann, Nicolas Cage, Cloris Leachman, Kat Dennings, Catherine Keener, Clark Duke`,
-      Director: 'Joel Crawford',
+      director: 'Joel Crawford',
       production: '2020',
       restrictions: 'NR',
       seats: [

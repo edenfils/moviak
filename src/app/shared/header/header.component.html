@@ -6,7 +6,7 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-3 col-6">
-                <a href="#" class="">
+                <a [routerLink]="['/']" class="">
                   <img src="assets/img/logo.png" alt="Logo" class="img-fluid">
                 </a>
             </div>
@@ -70,7 +70,7 @@
             <div class="collapse navbar-collapse" id="mainNav">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" [routerLink]="['/movies/:title/schedule']">
                     Theaters
                   </a>
                 </li>
