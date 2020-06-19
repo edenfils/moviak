@@ -1,4 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from './../../core/services/movies.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  moviesData: {}[];
+
+  constructor(service: MoviesService) {
+
+    this.moviesData = service.allMovies();
+    console.log(this.moviesData)
+  }
 
   ngOnInit() {
   }

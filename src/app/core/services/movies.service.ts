@@ -783,4 +783,10 @@ export class MoviesService {
     return this.movies;
   }
 
+  getMovie(slug: string): any {
+    return this.movies.filter((movie: any) => {
+      return movie.slug === slug;
+    });
+  }
+
 }
