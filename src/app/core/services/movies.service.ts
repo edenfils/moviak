@@ -12,7 +12,7 @@ export class MoviesService {
       slug: 'unhinged',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BZTI0ZGIxZTEtMWQxMi00MDVhLWFmNWQtNmU5ZWNhYjJmYjJkXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=1EtytOgGj5o',
+      trailer: 'https://www.youtube.com/embed/1EtytOgGj5o',
       releaseDate: '10 July 2020',
       duration: '90 minutes',
       // tslint:disable-next-line: max-line-length
@@ -75,7 +75,7 @@ export class MoviesService {
       slug: 'tenet',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BNmMwYzFlNTEtYTc0NC00NGY4LTgzNzItZGFiYTViY2QzNzU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=L3pk_TBkihU',
+      trailer: 'https://www.youtube.com/embed/L3pk_TBkihU',
       releaseDate: '31 July 2020',
       duration: '120 minutes',
       // tslint:disable-next-line: max-line-length
@@ -139,7 +139,7 @@ export class MoviesService {
       slug: 'mulan-2020',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BMjFlZjZkMTYtODM2Zi00OTM4LWIwYTktOTFjMmQzZDEzZDc4XkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SY1000_CR0,0,675,1000_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=KK8FHdFluOQ',
+      trailer: 'https://www.youtube.com/embed/KK8FHdFluOQ',
       releaseDate: '24 July 2020',
       duration: '115 minutes',
       // tslint:disable-next-line: max-line-length
@@ -203,7 +203,7 @@ export class MoviesService {
       slug: 'spongebob-movie-sponge-on-the-run',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BODIwMmQxNDktOWZjZC00NWI4LTg1NjktMGViOTE4ZTA4ZGY5XkEyXkFqcGdeQXVyNjg5MjU3NjE@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=-XOuu1vd_fk',
+      trailer: 'https://www.youtube.com/embed/-XOuu1vd_fk',
       releaseDate: '07 August 2020',
       duration: '115 minutes',
       // tslint:disable-next-line: max-line-length
@@ -267,7 +267,7 @@ export class MoviesService {
       slug: 'black-widow',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BMzFiODE0ZDUtN2IxNC00OTI5LTg4OWItZTE2MjU4ZTk2NjM5XkEyXkFqcGdeQXVyNDYzODU1ODM@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=ybji16u608U',
+      trailer: 'https://www.youtube.com/embed/ybji16u608U',
       releaseDate: '06 November 2020',
       duration: '115 minutes',
       // tslint:disable-next-line: max-line-length
@@ -331,7 +331,7 @@ export class MoviesService {
       slug: 'free-guy',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BNzE5YzVjZmEtNGYwZi00YjljLWExMzYtZjlkYTk4NDc0MmI5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_SX675_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=X2m-08cOAbc',
+      trailer: 'https://www.youtube.com/embed/X2m-08cOAbc',
       releaseDate: '11 December 2020',
       duration: '115 minutes',
       // tslint:disable-next-line: max-line-length
@@ -395,7 +395,7 @@ export class MoviesService {
       slug: 'top-gun-maverick',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BOTdiNjNjYTUtYzUxZC00NTljLWExYjktZmI0ODQ3ODg5N2U3XkEyXkFqcGdeQXVyNjg3MDMxNzU@._V1_SY1000_CR0,0,679,1000_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=qSqVVswa420',
+      trailer: 'https://www.youtube.com/embed/qSqVVswa420',
       releaseDate: '23 December 2020',
       duration: '115 minutes',
       // tslint:disable-next-line: max-line-length
@@ -459,7 +459,7 @@ export class MoviesService {
       slug: 'wonder-woman-1984',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BYzAyOGJkMzUtMmRjYS00NGJmLWExNGEtYzI2YjVmMmQzMzFiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_SX675_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=sfM7_JLk-84',
+      trailer: 'https://www.youtube.com/embed/sfM7_JLk-84',
       releaseDate: '02 October 2020',
       duration: '115 minutes',
       // tslint:disable-next-line: max-line-length
@@ -523,7 +523,7 @@ export class MoviesService {
       slug: 'antebellum',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BZmNlOTczOTktMzk3OC00N2RlLTg5NmEtYzNjODBiNzU1NDQxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SY1000_SX675_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=AIrzZ18K_3k',
+      trailer: 'https://www.youtube.com/embed/AIrzZ18K_3k',
       releaseDate: '21 August 2020',
       duration: '115 minutes',
       // tslint:disable-next-line: max-line-length
@@ -587,7 +587,7 @@ export class MoviesService {
       slug: 'a-quiet-place-part-ii',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BMmE3OGY2NzMtMGJmOS00NGViLWI4NjYtMjhlNTMxZjA5MDExXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=XEMwSdne6UE',
+      trailer: 'https://www.youtube.com/embed/XEMwSdne6UE',
       releaseDate: '04 September 2020',
       duration: '96 minutes',
       // tslint:disable-next-line: max-line-length
@@ -651,7 +651,7 @@ export class MoviesService {
       slug: 'no-time-to-die',
       // tslint:disable-next-line: max-line-length
       cover: 'https://m.media-amazon.com/images/M/MV5BNGEwMDU2ZDQtZmE5Zi00YjFiLWIwYWItOGMyMzY5MzljOWU3XkEyXkFqcGdeQXVyODk2NDQ3MTA@._V1_SY1000_CR0,0,685,1000_AL_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=BIhNsAtPbPI',
+      trailer: 'https://www.youtube.com/embed/BIhNsAtPbPI',
       releaseDate: '20 November 2020',
       duration: '163 minutes',
       // tslint:disable-next-line: max-line-length
@@ -715,7 +715,7 @@ export class MoviesService {
       slug: 'croods-2',
       // tslint:disable-next-line: max-line-length
       cover: 'https://regalcdn.azureedge.net/Croods2/HO00010244/TV_SmallPosterImage/20200403-101131371.jpg',
-      trailer: 'https://www.youtube.com/watch?v=vh6xso8QAys',
+      trailer: 'https://www.youtube.com/embed/vh6xso8QAys',
       releaseDate: '23 December 2020',
       duration: '163 minutes',
       // tslint:disable-next-line: max-line-length

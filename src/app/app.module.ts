@@ -13,6 +13,7 @@ import { MovieComponent } from './layouts/movie/movie.component';
 import { ScheduleComponent } from './layouts/schedule/schedule.component';
 import { CheckoutComponent } from './layouts/checkout/checkout.component';
 import { ThankYouComponent } from './layouts/thank-you/thank-you.component';
+import { SafePipe } from './safe.pipe';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ThankYouComponent } from './layouts/thank-you/thank-you.component';
     ScheduleComponent,
     CheckoutComponent,
     ThankYouComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,

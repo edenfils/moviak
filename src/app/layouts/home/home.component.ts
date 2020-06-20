@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from './../../core/services/movies.service';
+import { Router} from '@angular/router';
 
 
 @Component({
@@ -12,10 +13,14 @@ export class HomeComponent implements OnInit {
 
   moviesData: {}[];
 
-  constructor(service: MoviesService) {
+  constructor(service: MoviesService, private router: Router) {
 
     this.moviesData = service.allMovies();
-    console.log(this.moviesData)
+    console.log(this.moviesData);
+  }
+
+  selectMovie(slug: string) {
+   this.router.navigate(['movies', slug]);
   }
 
   ngOnInit() {

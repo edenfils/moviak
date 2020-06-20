@@ -334,6 +334,7 @@ html {
 }
 
 .movie {
+  cursor: pointer;
   &:hover {
     .movie__title {
       text-decoration: underline;

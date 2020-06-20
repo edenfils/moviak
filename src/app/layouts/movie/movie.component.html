@@ -41,8 +41,8 @@
             <div class="row trailer-row">
               <div class="col">
                 <div class="video-responsive">
-                  <!--<iframe src="{{ movieData.trailer }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div> -->
+                  <iframe [src]="movieData.trailer | safe"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> 
               </div> <!-- /.col -->
             </div> <!-- /.row- trailer -->
           </div> <!-- /.container -->
