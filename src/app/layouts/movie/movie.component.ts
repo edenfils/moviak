@@ -1,6 +1,6 @@
 import { MoviesService } from './../../core/services/movies.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -12,11 +12,15 @@ export class MovieComponent implements OnInit {
 
   movieData: {};
 
-  constructor(service: MoviesService, private route: ActivatedRoute) {
+  constructor(service: MoviesService, private route: ActivatedRoute, private router: Router) {
     this.route.paramMap.subscribe(params => {
       this.movieData = service.getMovie(params.get('title'))[0];
       console.log(this.movieData);
     });
+   }
+
+   goToSchedule(slug) {
+     this.router.navigate(['movies', slug, 'schedule']);
    }
 
 

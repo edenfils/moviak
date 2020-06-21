@@ -8,8 +8,11 @@
             <div class="col">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active"><a href="#"> Black Widow</a></li>
+                  <li class="breadcrumb-item"><a [routerLink]="['/']">Home</a></li>
+                  <li class="breadcrumb-item active">
+                    <a [routerLink]="['/movies', movieData.slug]"> 
+                    {{ movieData.title }}</a>
+                  </li>
                   <li class="breadcrumb-item active" aria-current="page"> Tickets</li>
                 </ol>
               </nav> <!-- /.Breadcrumb -->
@@ -29,17 +32,36 @@
               <div class="col-lg-6">
                 <div class="schedule">
                   <h2 class="schedule__title">
-                    Black Widow
+                    {{ movieData.title }}
                   </h2>
                   <div class="schedule__label">
                     Please Choose A Time
                   </div>
                   
                   <div class="time-box">
-                    <button class="btn btn-outline-primary">3:00pm</button>
-                    <button class="btn btn-outline-primary">6:00pm</button>
-                    <button class="btn btn-outline-primary">9:00pm</button>
-                    <button class="btn btn-outline-primary active">11:30pm</button>
+                    <button 
+                      (click)="pickTime('3:00pm')" 
+                      class="btn btn-outline-primary" 
+                      [ngClass]="{ 'active' : time == '3:00pm'}"
+                    >3:00pm</button>
+
+                    <button 
+                      (click)="pickTime('6:00pm')" 
+                      class="btn btn-outline-primary" 
+                      [ngClass]="{ 'active' : time == '6:00pm'}"
+                    >6:00pm</button>
+
+                    <button 
+                      (click)="pickTime('9:00pm')"  
+                      class="btn btn-outline-primary"
+                      [ngClass]="{ 'active' : time == '9:00pm'}"
+                    >9:00pm</button>
+
+                    <button 
+                      (click)="pickTime('11:30pm')" 
+                      class="btn btn-outline-primary" 
+                      [ngClass]="{ 'active' : time == '11:30pm'}"
+                    >11:30pm</button>
                   </div>
     
                   <div class="schedule__label">
@@ -70,7 +92,7 @@
                     </div>
     
                     <div class="tickets__amount">
-                      <input class="form-control" type="number">
+                      <input class="form-control" type="number" value="1">
                     </div>
     
                     <div class="tickets__calcu">

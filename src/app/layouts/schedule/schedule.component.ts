@@ -1,4 +1,8 @@
+
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from './../../core/services/movies.service';
+import {Router, ActivatedRoute} from '@angular/router';
+
 
 @Component({
   selector: 'app-schedule',
@@ -7,7 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScheduleComponent implements OnInit {
 
-  constructor() { }
+  movieData: {};
+  time: string = '11:30pm';
+
+  constructor(service: MoviesService, private route: ActivatedRoute, private router: Router) {
+    this.route.paramMap.subscribe(params => {
+      this.movieData = service.getMovie(params.get('title'))[0];
+      console.log(this.movieData);
+    });
+   }
+
+   pickTime(time) {
+     console.log(time);
+     this.time = time;
+   }
 
   ngOnInit() {
   }

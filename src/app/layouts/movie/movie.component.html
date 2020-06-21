@@ -1,4 +1,4 @@
-  <!-- Breadcrumbs
+ <!-- Breadcrumbs
       ============================================= -->
 
       <section class="breadcrumbs">
@@ -8,8 +8,11 @@
             <div class="col">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home  </a></li>
-                  <li class="breadcrumb-item active pr-2" aria-current="page">{{ movieData.title }} </li>
+                  <li class="breadcrumb-item"><a [routerLink]="['/']">Home</a></li>
+                  <li class="breadcrumb-item active">
+                    <a [routerLink]="['/movies', movieData.slug]"> 
+                    {{ movieData.title }}</a>
+                  </li>
                 </ol>
               </nav> <!-- /.Breadcrumb -->
             </div> <!-- /.col -->
@@ -32,9 +35,9 @@
               </div> <!-- /.col -->
     
               <div class="col-md-6 d-flex justify-content-end">
-                <a href="#book" class="btn btn-primary btn--book w-sm-100">
+                <button  class="btn btn-primary btn--book w-sm-100" (click)="goToSchedule(movieData.slug)">
                   Book now
-                </a>
+                </button>
               </div> <!-- /.col -->
             </div> <!-- /.row-book -->
     
