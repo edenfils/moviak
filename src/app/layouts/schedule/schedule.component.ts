@@ -20,7 +20,7 @@ export class ScheduleComponent implements OnInit {
   childTickets = 0;
   seniorTickets = 0;
 
-  constructor(service: MoviesService, private route: ActivatedRoute, private router: Router) {
+  constructor(private service: MoviesService, private route: ActivatedRoute, private router: Router) {
     this.route.paramMap.subscribe(params => {
       this.movieData = service.getMovie(params.get('title'))[0];
       console.log(this.movieData);
@@ -30,6 +30,11 @@ export class ScheduleComponent implements OnInit {
    pickTime(time) {
      console.log(time);
      this.time = time;
+   }
+
+   clickedSeat(slug, index) {
+     this.service.reservedSeat(slug, index);
+     console.log('clicked chair');
    }
 
   ngOnInit() {

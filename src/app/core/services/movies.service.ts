@@ -789,4 +789,8 @@ export class MoviesService {
     });
   }
 
+  reservedSeat(slug, index) {
+    console.log(`${slug}: ${index}`);
+  }
+
 }
