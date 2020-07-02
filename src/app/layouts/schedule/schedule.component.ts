@@ -13,6 +13,12 @@ export class ScheduleComponent implements OnInit {
 
   movieData: {};
   time: string = '11:30pm';
+  adultTicketsPrice = 15.03;
+  childTicketsPrice = 12.06;
+  seniorTicketsPrice = 11.53;
+  adultTickets = 1;
+  childTickets = 0;
+  seniorTickets = 0;
 
   constructor(service: MoviesService, private route: ActivatedRoute, private router: Router) {
     this.route.paramMap.subscribe(params => {

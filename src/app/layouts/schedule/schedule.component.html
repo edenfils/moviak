@@ -74,15 +74,15 @@
                     </div>
     
                     <div class="tickets__amount">
-                      <input class="form-control" type="number">
+                      <input class="form-control" type="number" value="1" [(ngModel)]="adultTickets">
                     </div>
     
                     <div class="tickets__calcu">
-                      1 x $15.03
+                      {{ adultTickets }} x ${{adultTicketsPrice}}
                     </div>
     
                     <div class="tickets__total">
-                      = $15.03
+                      = ${{ (adultTickets * adultTicketsPrice).toFixed(2) }}
                     </div>
                   </div>
     
@@ -92,15 +92,15 @@
                     </div>
     
                     <div class="tickets__amount">
-                      <input class="form-control" type="number" value="1">
+                      <input class="form-control" type="number" [(ngModel)]="childTickets">
                     </div>
     
                     <div class="tickets__calcu">
-                      1 x $15.03
+                      {{ childTickets }} x ${{adultTicketsPrice}}
                     </div>
     
                     <div class="tickets__total">
-                      = $15.03
+                      = ${{ (childTickets * childTicketsPrice ).toFixed(2) }}
                     </div>
                   </div>
     
@@ -111,15 +111,15 @@
                     </div>
     
                     <div class="tickets__amount">
-                      <input class="form-control" type="number">
+                      <input class="form-control" type="number" [(ngModel)]="seniorTickets">
                     </div>
     
                     <div class="tickets__calcu">
-                      1 x $15.03
+                      {{ seniorTickets }}x ${{seniorTicketsPrice}}
                     </div>
     
                     <div class="tickets__total">
-                      = $15.03
+                      = ${{ (seniorTickets * seniorTicketsPrice).toFixed(2) }}
                     </div>
                   </div>
                 </div>
