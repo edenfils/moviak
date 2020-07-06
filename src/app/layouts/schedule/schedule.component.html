@@ -125,13 +125,19 @@
                 </div>
               </div> <!-- /.col -->
     
-              <div class="col-lg-6">
+              <div class="col-lg-6" text-center>
+                <div style="display:flex; justify-content:center; width: 100%;">
+                  <button (click)="clickedCheckout()"  class="btn btn-primary btn--book w-sm-100 mb-5">
+                    Checkout
+                  </button>
+                </div>
                 <div class="chairs">
                   <div class="row">
                     <div class="col">
                       <div class="chairs__grid">
                         <ng-container *ngFor="let seat of movieData.seats; index as i">
-                          <div class="chairs__seat" [ngClass]="{ 'reserved': seat === 'reserved'}" (click)="clickedSeat(movieData.slug, i)">{{i}}</div>
+                          <div class="chairs__seat" [ngClass]="{'reserved': seat === 'reserved',
+                        'selected' : seat === 'selected'}" (click)="clickedSeat(movieData.slug, i)">{{i}}</div>
                         </ng-container>
                         
                         

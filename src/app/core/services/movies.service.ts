@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class MoviesService {
 
 
-  movies: {}[] = [
+  movies: any = [
     {
       title: 'Unhinged',
       slug: 'unhinged',
@@ -789,8 +789,33 @@ export class MoviesService {
     });
   }
 
-  reservedSeat(slug, index) {
-    console.log(`${slug}: ${index}`);
+  reservedSeat(slug, index, totalTickets) {
+    const movieId = this.movies.findIndex( (movie: any) => {
+      return movie.slug === slug;
+    });
+
+    let totalSelected = this.movies[movieId].seats.filter(x => x === 'selected').length;
+
+    if (totalSelected < totalTickets) {
+      if (this.movies[movieId].seats[index] == 'reserved') {
+        alert('This chair was already reserved, please choose one available');
+      } else {
+        this.movies[movieId].seats[index] =   this.movies[movieId].seats[index] === 'available' ? 'selected' : 'available';
+
+        totalSelected = this.movies[movieId].seats.filter(x => x === 'selected').length;
+      }
+    } else if (totalSelected  === totalTickets) {
+        if (this.movies[movieId].seats[index] === 'reserved') {
+          alert('This chair was already reserved, please choose one available');
+        } else {
+          this.movies[movieId].seats[index] =   this.movies[movieId].seats[index] === 'selected' ? 'available' : 'available';
+
+          totalSelected = this.movies[movieId].seats.filter(x => x === 'selected').length;
+        }
+    } else  {
+      alert(`You have ${totalTickets} tickets you can't reserve any more seats. Please order more tickets`);
+    }
+    console.log(movieId);
   }
 
 }

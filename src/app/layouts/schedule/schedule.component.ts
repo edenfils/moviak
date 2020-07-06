@@ -11,7 +11,7 @@ import {Router, ActivatedRoute} from '@angular/router';
 })
 export class ScheduleComponent implements OnInit {
 
-  movieData: {};
+  movieData: any;
   time: string = '11:30pm';
   adultTicketsPrice = 15.03;
   childTicketsPrice = 12.06;
@@ -33,8 +33,22 @@ export class ScheduleComponent implements OnInit {
    }
 
    clickedSeat(slug, index) {
-     this.service.reservedSeat(slug, index);
+     let totalTickets = this.adultTickets + this.childTickets + this.seniorTickets;
+     this.service.reservedSeat(slug, index, totalTickets);
+     console.log(totalTickets);
      console.log('clicked chair');
+   }
+
+   clickedCheckout() {
+     this.router.navigate(['movies', this.movieData.slug, 'schedule', 'checkout', 'thank-you'],
+     {
+      queryParams: {
+        adultTickets: this.adultTickets,
+        childTickets: this.childTickets,
+        seniorTickets: this.seniorTickets
+      }
+     }
+     );
    }
 
   ngOnInit() {
